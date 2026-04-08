@@ -4,13 +4,13 @@ A high-performance, minimalist, and deeply personal professional portfolio built
 
 ## ✨ Features
 
-- **Performer**: Built with Next.js App Router for near-instant load times.
-- ** Elite Minimalism**: A single-page, fluid layout focusing on value and experience.
-- ** Source Code Rain**: A custom JavaScript canvas animation featuring real Go and TypeScript tokens that follows the user's cursor.
-- ** Dynamic Scripture Toggle**: An interactive section cycling through meaningful scriptures (Amharic & English) with smooth fade transitions.
-- ** Responsive by Design**: Optimized for everything from mobile phones up to 4K monitors.
-- ** Fully Accessible**: Every link and icon includes descriptive ARIA labels for screen reader compatibility.
-- ** Real-Time Analytics**: Fully integrated with Google Analytics (GA4) and features a live-simulated visitor counter.
+- Performer : Built with Next.js App Router for near-instant load times.
+- Elite Minimalism : A single-page, fluid layout focusing on value and experience.
+- Source Code Rain : A custom JavaScript canvas animation featuring real Go and TypeScript tokens that follows the user's cursor.
+- Dynamic Scripture Toggle : An interactive section cycling through meaningful scriptures (Amharic & English) with smooth fade transitions.
+- Responsive by Design : Optimized for everything from mobile phones up to 4K monitors.
+- Fully Accessible : Every link and icon includes descriptive ARIA labels for screen reader compatibility.
+- Real-Time Analytics : Fully integrated with Google Analytics (GA4) and features a live-simulated visitor counter.
 
 ## 🛠️ Tech Stack
 
