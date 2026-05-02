@@ -27,18 +27,8 @@ const skills = [
 
 export function Hero() {
   const [isAmharic, setIsAmharic] = useState(false)
-  const [viewCount, setViewCount] = useState<number | null>(null)
 
-  useEffect(() => {
-    // Fetch real visitor count from a public hit counter API
-    // This increments the count on every page load
-    fetch('https://api.counterapi.dev/v1/yhosaina-portfolio/hits/up')
-      .then(res => res.json())
-      .then(data => {
-        if (data && data.count) setViewCount(data.count)
-      })
-      .catch(() => setViewCount(1)) // Start from 1 if it's the first time
-  }, [])
+
 
   return (
     <section className="max-w-4xl mx-auto pt-4 md:pt-8 pb-16 space-y-12 md:space-y-16 antialiased px-4 md:px-0">
@@ -66,12 +56,7 @@ export function Hero() {
               <MapPin size={10} className="text-muted-foreground/60" />
               <span className="text-[9px] font-bold uppercase tracking-widest text-muted-foreground/60">Addis Ababa, Ethiopia</span>
             </div>
-            <div className="px-3 py-1 bg-background/50 backdrop-blur-sm rounded-full flex items-center gap-2 border border-border/50 shadow-sm">
-              <Users size={10} className="text-muted-foreground/60" />
-              <span className="text-[9px] font-bold uppercase tracking-widest text-muted-foreground/60">
-                {viewCount ? viewCount.toLocaleString() : '...'} views
-              </span>
-            </div>
+
           </div>
         </div>
 
@@ -167,7 +152,7 @@ export function Hero() {
       </div>
 
       {/* Psalm of David - Click to Toggle Language */}
-      <div 
+      <div
         onClick={() => setIsAmharic(!isAmharic)}
         className="pt-16 pb-8 border-t border-border/20 text-center space-y-4 cursor-pointer group/psalm select-none"
       >
@@ -176,7 +161,7 @@ export function Hero() {
             &ldquo;From the rising of the sun to its setting, the name of the Lord is to be praised.&rdquo;
           </blockquote>
         </div>
-        
+
         <div className={`transition-all duration-700 transform ${isAmharic ? 'opacity-100 translate-y-0 block' : 'opacity-0 translate-y-2 hidden'}`}>
           <blockquote className="font-bold text-[17px] md:text-[20px] text-muted-foreground/80 leading-relaxed max-w-xl mx-auto font-serif group-hover/psalm:text-primary transition-colors text-justify md:text-center hyphens-auto">
             &ldquo;ከፀሐይ መውጫ ጀምሮ እስከ መግቢያው ድረስ የእግዚአብሔር ስም ይመስገን።&rdquo;
